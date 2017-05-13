@@ -6,12 +6,41 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_Test</sprite>
+    <sprites name="Mr_Pomp">
+      <sprite>sprites\spr_Pomp_Idle</sprite>
+      <sprite>sprites\spr_Pomp_Side</sprite>
+      <sprite>sprites\spr_Pomp_Fall</sprite>
+      <sprite>sprites\spr_Pomp_Jump</sprite>
+    </sprites>
+    <sprites name="Npcs">
+      <sprite>sprites\spr_Bee</sprite>
+      <sprite>sprites\spr_Ground</sprite>
+      <sprite>sprites\spr_Tough</sprite>
+    </sprites>
+    <sprites name="LevelComponents">
+      <sprite>sprites\spr_Solid1x1</sprite>
+      <sprite>sprites\spr_Solid1x2</sprite>
+      <sprite>sprites\spr_Solid1x3</sprite>
+      <sprite>sprites\spr_Solid1x4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Test</object>
+    <object>objects\obj_Pomp</object>
+    <object>objects\obj_SolidBase</object>
+    <objects name="Npcs">
+      <object>objects\obj_Bee</object>
+      <object>objects\obj_Ground</object>
+      <object>objects\obj_Tough</object>
+      <object>objects\obj_EnemyBase</object>
+    </objects>
+    <objects name="LevelComponents">
+      <object>objects\obj_Solid1x1</object>
+      <object>objects\obj_Solid1x2</object>
+      <object>objects\obj_Solid1x3</object>
+      <object>objects\obj_Solid1x4</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\m_TestLevel</room>
