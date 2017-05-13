@@ -77,17 +77,12 @@ health = 100;
             <kind>1</kind>
             <string>/// Player Health Step
 
-//Horizontal Collision with enemy
-if (place_meeting(x+sign(hsp),y,obj_EnemyBase))
+// Collision with enemy
+if (place_meeting(x,y,obj_EnemyBase))
 {
     health = health -1;
 }
 
-//Vertical Collision with enemy
-if (place_meeting(x,y+sign(vsp),obj_EnemyBase))
-{
-    health = health -1;
-}
 </string>
           </argument>
         </arguments>
