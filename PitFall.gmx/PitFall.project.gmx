@@ -27,7 +27,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_Pomp</object>
     <object>objects\obj_SolidBase</object>
