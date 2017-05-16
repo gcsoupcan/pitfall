@@ -26,6 +26,114 @@
           <argument>
             <kind>1</kind>
             <string>/// Flies toward Pomp.
+grav = 0.2;
+hsp = 0;
+vsp = 0;
+jumpspeed = 7;
+movespeed = 4;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Decide what NPC is do this tick
+
+mrPomp = instance_find(obj_Pomp,1);
+
+// if I'm about to step off a platform, then turn around
+// go left because Mr. Pomp is to my left
+if (mrPomp.x &lt; x)
+{
+    hsp = -movespeed;
+}
+// go right because Mr. Pomp is to my left
+else if (mrPomp.x &gt; x)
+{
+    hsp = movespeed;
+}
+// I'm right above Mr. Pomp
+else
+{
+    hsp = 0;
+}
+
+// go down because Mr. Pomp is below me
+if (mrPomp.y &lt; y)
+{
+    vsp = -movespeed;
+}
+// go up because Mr. Pomp is above me
+else if (mrPomp.y &gt; y)
+{
+    vsp = movespeed;
+}
+// I'm next to Mr. Pomp
+else
+{
+    vsp = 0;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Player Controller Step
+
+//Horizontal Collision
+if (place_meeting(x+hsp,y,obj_SolidBase))
+{
+    while(!place_meeting(x+sign(hsp),y,obj_SolidBase))
+    {
+        x += sign(hsp);
+    }
+    hsp = 0;
+}
+x += hsp;
+
+//Vertical Collision
+if (place_meeting(x,y+vsp,obj_SolidBase))
+{
+    while(!place_meeting(x,y+sign(vsp),obj_SolidBase))
+    {
+        y += sign(vsp);
+    }
+    vsp = 0;
+}
+y += vsp;
 </string>
           </argument>
         </arguments>
