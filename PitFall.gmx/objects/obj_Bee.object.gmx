@@ -77,12 +77,12 @@ else
 // go down because Mr. Pomp is below me
 if (mrPomp.y &lt; y)
 {
-    vsp = -movespeed;
+    vsp = -movespeed/2;
 }
 // go up because Mr. Pomp is above me
 else if (mrPomp.y &gt; y)
 {
-    vsp = movespeed;
+    vsp = movespeed/2;
 }
 // I'm next to Mr. Pomp
 else
