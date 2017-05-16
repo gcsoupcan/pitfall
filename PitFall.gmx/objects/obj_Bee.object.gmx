@@ -55,9 +55,9 @@ movespeed = 4;
             <kind>1</kind>
             <string>/// Decide what NPC is do this tick
 
-mrPomp = instance_find(obj_Pomp,1);
+// get refence to mrPomp so that I can find out where he is relative to me
+mrPomp = instance_find(obj_Pomp,1);  // 1 because there is only 1 Mr. Pomp
 
-// if I'm about to step off a platform, then turn around
 // go left because Mr. Pomp is to my left
 if (mrPomp.x &lt; x)
 {
