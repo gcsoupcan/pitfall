@@ -58,7 +58,6 @@ image_speed = 0.3; // designed for 24 FPS, room is 60 FPS  24/60 = .4, but we wa
             <kind>1</kind>
             <string>/// Initialize Health and Victory Condition
 health = 1;
-accomplishedObjective = false;
 </string>
           </argument>
         </arguments>
@@ -90,13 +89,13 @@ if (place_meeting(x,y,obj_EnemyBase))
     {
         health = health -1;
     }
+    
+    // Handle death
+    if (health == 0)
+    {
+        room_goto(m_TestLevel);
+    }
 }
-// Collision with enemy
-if (place_meeting(x,y,obj_RoomObjective))
-{
-    accomplishedObjective = true;
-}
-
 </string>
           </argument>
         </arguments>

@@ -28,6 +28,8 @@
     </sprites>
     <sprites name="Text">
       <sprite>sprites\spr_Win</sprite>
+      <sprite>sprites\spr_Help</sprite>
+      <sprite>sprites\spr_Title</sprite>
       <sprite>sprites\spr_Lose</sprite>
     </sprites>
   </sprites>
@@ -54,9 +56,21 @@
       <object>objects\obj_Solid1x5</object>
       <object>objects\obj_RoomObjective</object>
     </objects>
+    <objects name="Rooms">
+      <object>objects\obj_TitleScreen</object>
+      <object>objects\obj_BaseScreen</object>
+      <object>objects\obj_VictoryScreen</object>
+      <object>objects\obj_LostScreen</object>
+      <object>objects\obj_HelpScreen</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\m_Title</room>
     <room>rooms\m_TestLevel</room>
+    <room>rooms\m_Level2</room>
+    <room>rooms\m_Victory</room>
+    <room>rooms\m_Lost</room>
+    <room>rooms\m_Help</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
