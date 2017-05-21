@@ -58,7 +58,7 @@
       <object>objects\obj_Solid1x5</object>
       <object>objects\obj_RoomObjective</object>
     </objects>
-    <objects name="Rooms">
+    <objects name="RoomControls">
       <object>objects\obj_TitleScreen</object>
       <object>objects\obj_BaseScreen</object>
       <object>objects\obj_VictoryScreen</object>
@@ -74,6 +74,7 @@
     <room>rooms\m_Victory</room>
     <room>rooms\m_Lost</room>
     <room>rooms\m_Help</room>
+    <room>rooms\m_LevelToCopy</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
