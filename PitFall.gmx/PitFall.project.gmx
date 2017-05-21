@@ -16,8 +16,10 @@
     <sprites name="Npcs">
       <sprite>sprites\spr_Bee</sprite>
       <sprite>sprites\spr_Ground</sprite>
+      <sprite>sprites\spr_Gorilla</sprite>
+      <sprite>sprites\spr_GorillaRed</sprite>
+      <sprite>sprites\spr_GorillaBlue</sprite>
       <sprite>sprites\spr_Tough</sprite>
-      <sprite>sprites\spr_Tough2</sprite>
     </sprites>
     <sprites name="LevelComponents">
       <sprite>sprites\spr_Solid1x1</sprite>
@@ -42,16 +44,10 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_Pomp</object>
+    <object>objects\obj_BaseScreen</object>
+    <object>objects\obj_EnemyBase</object>
     <object>objects\obj_SolidBase</object>
-    <objects name="Npcs">
-      <object>objects\obj_Bee</object>
-      <object>objects\obj_Ground</object>
-      <object>objects\obj_Tough</object>
-      <object>objects\obj_Tough2</object>
-      <object>objects\obj_EnemyBase</object>
-      <object>objects\obj_DeathArea</object>
-    </objects>
+    <object>objects\obj_Pomp</object>
     <objects name="LevelComponents">
       <object>objects\obj_Solid1x1</object>
       <object>objects\obj_Solid1x2</object>
@@ -60,9 +56,17 @@
       <object>objects\obj_Solid1x5</object>
       <object>objects\obj_RoomObjective</object>
     </objects>
+    <objects name="Npcs">
+      <object>objects\obj_Bee</object>
+      <object>objects\obj_Ground</object>
+      <object>objects\obj_Gorilla</object>
+      <object>objects\obj_Tough</object>
+      <object>objects\obj_GorillaRed</object>
+      <object>objects\obj_GorillaBlue</object>
+      <object>objects\obj_DeathArea</object>
+    </objects>
     <objects name="RoomControls">
       <object>objects\obj_TitleScreen</object>
-      <object>objects\obj_BaseScreen</object>
       <object>objects\obj_VictoryScreen</object>
       <object>objects\obj_LostScreen</object>
       <object>objects\obj_HelpScreen</object>
