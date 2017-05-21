@@ -24,6 +24,11 @@
       <sprite>sprites\spr_Solid1x3</sprite>
       <sprite>sprites\spr_Solid1x4</sprite>
       <sprite>sprites\spr_Solid1x5</sprite>
+      <sprite>sprites\spr_RoomObjective</sprite>
+    </sprites>
+    <sprites name="Text">
+      <sprite>sprites\spr_Win</sprite>
+      <sprite>sprites\spr_Lose</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -43,6 +48,7 @@
       <object>objects\obj_Solid1x3</object>
       <object>objects\obj_Solid1x4</object>
       <object>objects\obj_Solid1x5</object>
+      <object>objects\obj_RoomObjective</object>
     </objects>
   </objects>
   <rooms name="rooms">
