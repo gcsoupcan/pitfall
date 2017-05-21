@@ -29,7 +29,7 @@
 grav = 0.2;
 hsp = 0;
 vsp = 0;
-jumpspeed = 7;
+verticalspeed = 2;
 movespeed = 4;
 
 image_speed = 0.4;  // sprite designed for 24 FPS, running 60 FPS, 24/60 = 0.4
@@ -79,12 +79,12 @@ else
 // go down because Mr. Pomp is below me
 if (mrPomp.y &lt; y)
 {
-    vsp = -movespeed/2;
+    vsp = -verticalspeed;
 }
 // go up because Mr. Pomp is above me
 else if (mrPomp.y &gt; y)
 {
-    vsp = movespeed/2;
+    vsp = verticalspeed;
 }
 // I'm next to Mr. Pomp
 else
