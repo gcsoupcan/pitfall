@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprites name="Mr_Pomp">
       <sprite>sprites\spr_Pomp_Idle</sprite>
+      <sprite>sprites\spr_Pomp_Static</sprite>
       <sprite>sprites\spr_Pomp_Side</sprite>
       <sprite>sprites\spr_Pomp_Fall</sprite>
       <sprite>sprites\spr_Pomp_Jump</sprite>

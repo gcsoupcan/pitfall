@@ -31,6 +31,7 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 11;
 movespeed = 4;
+image_speed = 0.3; // designed for 24 FPS, room is 60 FPS  24/60 = .4, but we wanted a little slower
 </string>
           </argument>
         </arguments>
