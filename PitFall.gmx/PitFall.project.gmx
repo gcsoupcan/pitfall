@@ -24,6 +24,7 @@
       <sprite>sprites\spr_Solid1x3</sprite>
       <sprite>sprites\spr_Solid1x4</sprite>
       <sprite>sprites\spr_Solid1x5</sprite>
+      <sprite>sprites\spr_DeathArea1x5</sprite>
       <sprite>sprites\spr_RoomObjective</sprite>
     </sprites>
     <sprites name="Text">
@@ -47,6 +48,7 @@
       <object>objects\obj_Ground</object>
       <object>objects\obj_Tough</object>
       <object>objects\obj_EnemyBase</object>
+      <object>objects\obj_DeathArea</object>
     </objects>
     <objects name="LevelComponents">
       <object>objects\obj_Solid1x1</object>
@@ -67,6 +69,7 @@
   <rooms name="rooms">
     <room>rooms\m_Title</room>
     <room>rooms\m_TestLevel</room>
+    <room>rooms\m_Level1</room>
     <room>rooms\m_Level2</room>
     <room>rooms\m_Victory</room>
     <room>rooms\m_Lost</room>
