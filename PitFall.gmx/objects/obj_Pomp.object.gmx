@@ -31,6 +31,10 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 11;
 movespeed = 4;
+
+isAirbourne = false;
+
+
 image_speed = 0.3; // designed for 24 FPS, room is 60 FPS  24/60 = .4, but we wanted a little slower
 </string>
           </argument>
@@ -141,6 +145,11 @@ if (vsp &lt; 10) vsp += grav;
 if (place_meeting(x,y+1,obj_SolidBase))
 {
     vsp = key_jump * -jumpspeed;
+    isAirbourne = false;
+}
+else
+{
+    isAirbourne = true;
 }
 
 //Horizontal Collision
@@ -198,27 +207,43 @@ else if (vsp &gt; 0)
 {
     desiredSprite = spr_Pomp_Fall;
 }
+else if (isAirbourne)
+{
+    // do nothing if is at the apex of his jump
+    desiredSprite = spr_Pomp_Fall;
+}
 // running right
 else if (hsp &gt; 0)
 {
     desiredSprite = spr_Pomp_Side;
-    image_xscale = 1;
 }
 // running left
 else if (hsp &lt; 0)
 {
     desiredSprite = spr_Pomp_Side;
-    // Flip sprite horizontally
-    image_xscale = -1;
 }
 else
 {
     desiredSprite = spr_Pomp_Idle;
 }
-
+    
 if (sprite_index != desiredSprite)
 {
     sprite_index = desiredSprite;
+}
+
+
+// image flipping, Doing this here rather than above so that easily cover the case of changing direction while in the air
+//  going right
+if (hsp &gt; 0)
+{
+    image_xscale = 1;
+}
+// going left
+else if (hsp &lt; 0)
+{
+    // Flip sprite horizontally
+    image_xscale = -1;
 }
 </string>
           </argument>
