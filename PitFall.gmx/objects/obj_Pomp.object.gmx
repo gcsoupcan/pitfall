@@ -186,6 +186,7 @@ y += vsp;
             <string>/// Select Sprite
 
 desiredSprite = spr_Pomp_Idle;
+
 // fall
 if (vsp &lt; 0)
 {
@@ -200,11 +201,14 @@ else if (vsp &gt; 0)
 else if (hsp &gt; 0)
 {
     desiredSprite = spr_Pomp_Side;
+    image_xscale = 1;
 }
-// runnign left
+// running left
 else if (hsp &lt; 0)
 {
     desiredSprite = spr_Pomp_Side;
+    // Flip sprite horizontally
+    image_xscale = -1;
 }
 else
 {
