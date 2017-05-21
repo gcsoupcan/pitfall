@@ -12,6 +12,7 @@
       <sprite>sprites\spr_Pomp_Running</sprite>
       <sprite>sprites\spr_Pomp_Fall</sprite>
       <sprite>sprites\spr_Pomp_Jump</sprite>
+      <sprite>sprites\spr_Punch</sprite>
     </sprites>
     <sprites name="Npcs">
       <sprite>sprites\spr_Bee</sprite>
