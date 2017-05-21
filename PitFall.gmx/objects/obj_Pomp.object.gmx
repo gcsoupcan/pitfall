@@ -215,12 +215,12 @@ else if (isAirbourne)
 // running right
 else if (hsp &gt; 0)
 {
-    desiredSprite = spr_Pomp_Side;
+    desiredSprite = spr_Pomp_Running;
 }
 // running left
 else if (hsp &lt; 0)
 {
-    desiredSprite = spr_Pomp_Side;
+    desiredSprite = spr_Pomp_Running;
 }
 else
 {
