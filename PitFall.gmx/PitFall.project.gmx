@@ -17,6 +17,7 @@
       <sprite>sprites\spr_Bee</sprite>
       <sprite>sprites\spr_Ground</sprite>
       <sprite>sprites\spr_Tough</sprite>
+      <sprite>sprites\spr_Tough2</sprite>
     </sprites>
     <sprites name="LevelComponents">
       <sprite>sprites\spr_Solid1x1</sprite>
@@ -47,6 +48,7 @@
       <object>objects\obj_Bee</object>
       <object>objects\obj_Ground</object>
       <object>objects\obj_Tough</object>
+      <object>objects\obj_Tough2</object>
       <object>objects\obj_EnemyBase</object>
       <object>objects\obj_DeathArea</object>
     </objects>
