@@ -25,12 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Walks back and forth between two points
+            <string>/// Walks back and forth between two points
 grav = 0.2;
 hsp = 0;
 vsp = 0;
 jumpspeed = 7;
 movespeed = 4;
+
+image_speed = 0.4;  // sprite designed for 24 FPS, running 60 FPS, 24/60 = 0.4
 </string>
           </argument>
         </arguments>
