@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>677</xoffset>
-    <yoffset>-128</yoffset>
+    <xoffset>197</xoffset>
+    <yoffset>-254</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="Forest_bck" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
@@ -65,19 +65,11 @@
     <instance objName="obj_GorillaBlue" x="4018" y="537" name="inst_1FBE6BA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gorilla" x="1179" y="526" name="inst_ECCA97CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gorilla" x="1716" y="388" name="inst_C255ECD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Gorilla" x="2199" y="495" name="inst_2BAAC623" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gorilla" x="3053" y="519" name="inst_004B49D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Gorilla" x="2473" y="396" name="inst_E83B7872" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gorilla" x="566" y="399" name="inst_299D6069" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="1091" y="130" name="inst_495E6C04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="1202" y="189" name="inst_9262F210" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bee" x="1502" y="95" name="inst_2BD990CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bee" x="2306" y="89" name="inst_6449EF3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bee" x="1988" y="230" name="inst_EF4C2A57" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="2948" y="125" name="inst_09C5103A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="2786" y="241" name="inst_FA0D6920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="3508" y="117" name="inst_36F1CC0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bee" x="3756" y="197" name="inst_5154622A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
