@@ -31,6 +31,7 @@ hsp = 0;
 vsp = 0;
 jumpspeed = 11;
 movespeed = 4;
+isPunching = false;
 
 isAirbourne = false;
 
@@ -121,6 +122,7 @@ if (place_meeting(x,y,obj_EnemyBase))
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
 key_jump = keyboard_check_pressed(vk_space);
+key_punch = keyboard_check_pressed(vk_alt);
 
 //React to inputs
 move = key_left + key_right;
@@ -183,39 +185,47 @@ y += vsp;
 
 desiredSprite = spr_Pomp_Idle;
 
-// fall
-if (vsp &lt; 0)
+if (!isPunching)
 {
-    desiredSprite = spr_Pomp_Jump;
-}
-// jump
-else if (vsp &gt; 0)
-{
-    desiredSprite = spr_Pomp_Fall;
-}
-else if (isAirbourne)
-{
-    // do nothing if is at the apex of his jump
-    desiredSprite = spr_Pomp_Fall;
-}
-// running right
-else if (hsp &gt; 0)
-{
-    desiredSprite = spr_Pomp_Running;
-}
-// running left
-else if (hsp &lt; 0)
-{
-    desiredSprite = spr_Pomp_Running;
-}
-else
-{
-    desiredSprite = spr_Pomp_Idle;
-}
-    
-if (sprite_index != desiredSprite)
-{
-    sprite_index = desiredSprite;
+    if (key_punch)
+    {
+        isPunching = true;
+        desiredSprite = spr_Pomp_Punch;
+    }
+    // fall
+    else if (vsp &lt; 0)
+    {
+        desiredSprite = spr_Pomp_Jump;
+    }
+    // jump
+    else if (vsp &gt; 0)
+    {
+        desiredSprite = spr_Pomp_Fall;
+    }
+    else if (isAirbourne)
+    {
+        // do nothing if is at the apex of his jump
+        desiredSprite = spr_Pomp_Fall;
+    }
+    // running right
+    else if (hsp &gt; 0)
+    {
+        desiredSprite = spr_Pomp_Running;
+    }
+    // running left
+    else if (hsp &lt; 0)
+    {
+        desiredSprite = spr_Pomp_Running;
+    }
+    else
+    {
+        desiredSprite = spr_Pomp_Idle;
+    }
+        
+    if (sprite_index != desiredSprite)
+    {
+        sprite_index = desiredSprite;
+    }
 }
 
 
@@ -230,6 +240,34 @@ else if (hsp &lt; 0)
 {
     // Flip sprite horizontally
     image_xscale = -1;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// punch is done
+
+if (sprite_index == spr_Pomp_Punch)
+{
+    isPunching = false;
 }
 </string>
           </argument>
