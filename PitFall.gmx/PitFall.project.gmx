@@ -42,6 +42,10 @@
     <background>background\background0</background>
     <background>background\background1</background>
     <background>background\Forest_bck</background>
+    <background>background\Help_Bck</background>
+    <background>background\Winner_Bck</background>
+    <background>background\Title_Bck</background>
+    <background>background\Loser_Bck</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -82,6 +86,7 @@
     <room>rooms\m_Lost</room>
     <room>rooms\m_Help</room>
     <room>rooms\m_LevelToCopy</room>
+    <room>rooms\room10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
