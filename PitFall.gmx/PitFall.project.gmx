@@ -86,7 +86,6 @@
     <room>rooms\m_Lost</room>
     <room>rooms\m_Help</room>
     <room>rooms\m_LevelToCopy</room>
-    <room>rooms\room10</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
