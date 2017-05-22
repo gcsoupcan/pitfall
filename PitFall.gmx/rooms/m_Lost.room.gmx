@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>3</page>
-    <xoffset>0</xoffset>
-    <yoffset>0</yoffset>
+    <xoffset>-104</xoffset>
+    <yoffset>-60</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="Loser_Bck" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
